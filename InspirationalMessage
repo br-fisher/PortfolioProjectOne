@@ -1,0 +1,15 @@
+let part1 = ["Life is like", "Love is like", "Relationships are like"];
+let part2 = ["a box of chocolates", "a boat in a river", "a stone in a storm"];
+let part3 = [", you never know what you are going to get.", ", no trouble until distrubed.", ", safer when not disturbed from the outside."];
+
+let inspirationalMessage = () => {
+    let _part1=part1[Math.floor(Math.random()*part1.length)];
+    //console.log(_part1);
+    let _part2=part2[Math.floor(Math.random()*part2.length)];
+    let _part3=part3[Math.floor(Math.random()*part3.length)];
+    
+    return _part1 + " " + _part2 + _part3;
+}
+
+console.log(inspirationalMessage());
+
